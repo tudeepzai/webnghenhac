@@ -26,7 +26,6 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '315',
         width: '100%',
-        videoId: '5qap5aO4i9A', // Bài hát mặc định (Lofi chill)
         playerVars: { 'autoplay': 0, 'controls': 1 },
         events: {
             'onReady': onPlayerReady,
@@ -107,4 +106,5 @@ function changeSong() {
         });
         document.getElementById("songId").value = "";
     }
+
 }
