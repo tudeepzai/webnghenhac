@@ -3,69 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gửi Bé Yêu ❤️</title> <style>
+    <title>Gửi Bé Yêu ❤️</title>
+    <style>
         body {
-            /* Màu nền: Bạn có thể đổi mã màu #ffe6e6 thành màu khác */
-            background-color: #ffe6e6; 
+            background-color: #ffe6e6; /* Màu nền hồng phấn */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-        }
-
-        .header {
             text-align: center;
-            padding: 20px;
-            color: #d63384; /* Màu chữ tiêu đề */
         }
 
-        .header h1 { margin: 10px 0; font-size: 2.5rem; }
-        .header p { font-size: 1.2rem; color: #666; }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            height: 70vh; /* Chiều cao khung nhạc chiếm 70% màn hình */
+        .card {
             background: white;
-            padding: 10px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(214, 51, 132, 0.2);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(214, 51, 132, 0.3);
+            max-width: 500px;
+            width: 90%;
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            border: none;
+        h1 {
+            color: #d63384;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Trang trí hình ảnh động (GIF) cho sinh động */
+        .decoration {
+            margin-bottom: 20px;
+        }
+        .decoration img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        /* Nút bấm ảo diệu */
+        .music-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #d63384);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(214, 51, 132, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(214, 51, 132, 0.6);
         }
 
         .footer {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 0.9rem;
-            color: #888;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Phòng Nhạc Của Chúng Mình 🎵</h1>
-        <p>Anh làm cái này để mình cùng nghe nhạc mỗi tối nhé!</p>
+    <div class="card">
+        <div class="decoration">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExazNxdDNzZnBxdGk5eXF6bWxpZW96NzB4OXB6eHBoYXQ4Ynh6Z3BzZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/LpDmM2wSt6Hm4fwoB8/giphy.gif" alt="Cute music">
+        </div>
+
+        <h1>Góc Nhạc Của Chúng Mình 🎵</h1>
+        
+        <p>
+            Anh không biết viết code siêu nhân,<br>
+            Nhưng anh muốn cùng em nghe nhạc mỗi ngày.<br>
+            Bấm vào nút bên dưới để vào phòng nhé!
+        </p>
+
+        <a href="https://w2g.tv/rooms/LINK-CUA-BAN-O-DAY" target="_blank" class="music-btn">
+            ▶️ Vào Nghe Nhạc Thôi
+        </a>
     </div>
 
-    <div class="container">
-        <iframe 
-            src="https://w2g.tv/?r=14ryeltjhv4vujwbf9" 
-            allowfullscreen>
-        </iframe>
-    </div>
-
-    <div class="footer">
-        Yêu em nhiều lắm ❤️
-    </div>
+    <div class="footer">Designed with ❤️ for you</div>
 
 </body>
 </html>
